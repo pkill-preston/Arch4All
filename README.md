@@ -4,7 +4,5 @@ Para facilitar o use e abrandir o mundo unix, dicidi criar este repositório que
 
 ## Bibliografia
 
-O repositório foi idealizado utilizando somente a Wiki do ArchLinux.
-
-[ArchWiki](https://wiki.archlinux.org/)
+O repositório foi idealizado utilizando somente a [Wiki](https://wiki.archlinux.org/) do ArchLinux.
 
