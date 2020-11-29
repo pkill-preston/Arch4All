@@ -6,5 +6,5 @@ Para facilitar o use e abrandir o mundo unix, dicidi criar este repositório que
 
 O repositório foi idealizado utilizando somente a Wiki do ArchLinux.
 
-## [ArchWiki](https://wiki.archlinux.org/)
+**[ArchWiki**(https://wiki.archlinux.org/)
 
