@@ -2,4 +2,8 @@
 
 Para facilitar o use e abrandir o mundo unix, dicidi criar este repositório que consegue montar um sistema arch, guiando o usuário por todos os passos.
 
- ## Base
+## Base
+
+Todos os comandos podem ser encontrados nos seguintes sites
+
+## [ArchWiki](https://wiki.archlinux.org/)
