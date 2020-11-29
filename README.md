@@ -4,7 +4,6 @@ Para facilitar o use e abrandir o mundo unix, dicidi criar este repositório que
 
 ## Base
 
-O repositório foi idealizado utilizando os seguintes sites.
+O repositório foi idealizado utilizando somente a Wiki do ArchLinux.
 
 ## [ArchWiki](https://wiki.archlinux.org/)
-## [Diolinux](https://diolinux.com.br/2019/07/como-instalar-arch-linux-tutorial-iniciantes.html)
