@@ -22,7 +22,7 @@ printf "127.0.0.1	localhost\n::1		localhost\n127.0.1.1	$HOSTNAME.localdomain	$HO
 
 ## Installing some basic programs
 
-pacman -S dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog sudo vim ntfs-3g man-db man-pages
+pacman -S dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog sudo vim ntfs-3g man-db man-pages noto-fonts-cjk noto-fonts-emoji noto-fonts
 
 ## Creating a new user
 
