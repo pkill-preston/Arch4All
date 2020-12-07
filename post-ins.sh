@@ -10,7 +10,9 @@ locale-gen
 
 ## Localization
 
-echo "LANG=en_US.UTF-8\n" > /home/preston/Documents/git/sh/locale/locale.conf ; echo "KEYMAP=br-abnt2\n" > /home/preston/Documents/git/sh/locale/vconsole.conf
+hwclock --systohc
+
+echo "LANG=en_US.UTF-8\n" > /etc/locale.conf ; echo "KEYMAP=br-abnt2\n" > /etc/vconsole.conf
 
 ## Network configuration
 
