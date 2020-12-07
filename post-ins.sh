@@ -22,9 +22,19 @@ printf "127.0.0.1	localhost\n::1		localhost\n127.0.1.1	$HOSTNAME.localdomain	$HO
 
 ## Installing some basic programs
 
-pacman -S dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog sudo vim ntfs-3g man-db man-pages noto-fonts-cjk noto-fonts-emoji noto-fonts
+pacman -S dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog sudo vim ntfs-3g man-db man-pages noto-fonts-cjk noto-fonts-emoji noto-fonts xdg-user-dir
 
 ## Creating a new user
+
+read -p "Insert your Full Name" $USERNAME
+
+useradd -m -g users -G wheel $USERNAME
+
+mkdir /home/$USERNAME
+
+$USERNAME ALL=(ALL) ALL
+
+usermod -d /home/$USERNAME -m $USERNAME
 
 ## Initramfs
 
