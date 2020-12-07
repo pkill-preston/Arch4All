@@ -1,28 +1,28 @@
 #! /bin/sh
 
 ## Defining Region and synching it to the system
-#ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime && hwclock --systohc
+
+ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime && hwclock --systohc
 
 ## Generating the locale
-#locale-gen
+
+locale-gen
 
 ## Localization
 
-printf "LANG=en_US.UTF-8\n" > /home/preston/Documents/git/sh/locale/locale.conf
-
-printf "KEYMAP=br-abnt2\n" > /home/preston/Documents/git/sh/locale/vconsole.conf
+echo "LANG=en_US.UTF-8\n" > /home/preston/Documents/git/sh/locale/locale.conf ; echo "KEYMAP=br-abnt2\n" > /home/preston/Documents/git/sh/locale/vconsole.conf
 
 ## Network configuration
 
 read -p "Insert your hostname: " HOSTNAME
 
-printf "$HOSTNAME" > ./host/hostname
+#echo "$HOSTNAME" > /etc/hostname
 
-printf "127.0.0.1	localhost\n::1		localhost\n127.0.1.1	$HOSTNAME.localdomain	$HOSTNAME" > ./host/hosts
+echo -e  "127.0.0.1       localhost\n::1             localhost\n127.0.1.1       $HOSTNAME.localdomain   $HOSTNAME" > ./pinto
 
 ## Installing some basic programs
 
-pacman -S dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog sudo vim ntfs-3g man-db man-pages noto-fonts-cjk noto-fonts-emoji noto-fonts xdg-user-dir
+pacman -S dosfstools os-prober mtools network-manager-applet networkmanager wpa_supplicant wireless_tools dialog sudo vim ntfs-3g man-db man-pages noto-fonts-cjk noto-fonts-emoji noto-fonts xdg-user-dir xdg-user-dirs-gtk 
 
 ## Creating a new user
 
@@ -47,7 +47,9 @@ echo "Define your root password"
 passwd
 
 ## Grub Installation
+
 # BIOS Mode
+
 [ [ "BOOT_MODE" == 'BIOS' ] ] pacman -S grub 
 
 grub-install --target=i386-pc /dev/sdX
