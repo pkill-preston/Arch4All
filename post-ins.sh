@@ -2,7 +2,24 @@
 
 ## Defining Region and synching it to the system
 
-ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime && hwclock --systohc
+<<comment
+
+Africa
+America
+Antarctica
+Arctic
+Asia
+Atlantic
+Australia
+Brazil
+Canada
+Chile
+Europe
+Indian
+Mexico
+Pacific
+US
+comment
 
 ## Generating the locale
 
@@ -18,7 +35,7 @@ echo "LANG=en_US.UTF-8\n" > /etc/locale.conf ; echo "KEYMAP=br-abnt2\n" > /etc/v
 
 read -p "Insert your hostname: " HOSTNAME
 
-#echo "$HOSTNAME" > /etc/hostname
+echo "$HOSTNAME" > /etc/hostname
 
 echo -e  "127.0.0.1       localhost\n::1             localhost\n127.0.1.1       $HOSTNAME.localdomain   $HOSTNAME" > ./pinto
 
@@ -48,6 +65,7 @@ echo "Define your root password"
 
 passwd
 
+<<future
 ## Grub Installation
 
 # BIOS Mode
@@ -69,3 +87,4 @@ grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=GRUBX64
 cp /usr/share/locale/en@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
 
 grub-mkconfig -o /boot/grub/grub.cfg
+future
