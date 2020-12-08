@@ -6,4 +6,5 @@ Para facilitar o use e abrandir o mundo unix, dicidi criar este repositório que
 
 O repositório foi idealizado utilizando somente a [Wiki](https://wiki.archlinux.org/) do ArchLinux.
 
-"[DISCLAIMER]" Nada aqui é sério estou só tentando fazer funcionar.
+[DISCLAIMER] 
+Nada aqui é sério estou só tentando fazer funcionar.
