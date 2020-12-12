@@ -2,25 +2,6 @@
 
 ## Defining Region and synching it to the system
 
-<<comment
-
-Africa
-America
-Antarctica
-Arctic
-Asia
-Atlantic
-Australia
-Brazil
-Canada
-Chile
-Europe
-Indian
-Mexico
-Pacific
-US
-comment
-
 ## Generating the locale
 
 locale-gen
